@@ -1,0 +1,254 @@
+.card-body{
+    margin-top:0px;
+}
+.container-fluid{
+    background-color: rgb(240,240,240);
+}
+.line{
+    border: 1px solid rgba(51, 51, 44, 0.925);
+    margin-bottom: 5px;
+}
+.card{
+    width: 30rem; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top:5px;
+    margin-bottom: 5px;
+    border: 3px solid rgba(51, 51, 44, 0.925);
+}
+
+.card-img-top{
+    /*height: 100px;*/
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    max-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.logo{
+    width: 30px;
+}
+#more {
+    display: none;
+}
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active2, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active2:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.profile {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.hockey{
+    width: 200px;
+    margin: auto;
+    border-radius: 5%;
+}
+.mrrobot{
+    width: 250px;
+    border-radius: 3%;
+    margin-top: 15px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.scroll{
+    scroll-behavior: smooth;
+}
+
+.Thick_Border{
+    border-width: thick; 
+    border-color: black;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.img{
+    max-width: 100%;   
+}
+
+.img:hover {opacity: 0.7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    padding: 10px;
+    flex-basis: 50%;
+}
+
+.ShortCut_image:hover{
+   transform: scale(1.25);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.Short_container {
+  position: relative;
+
+}
+
+.Short_overlay {
+  position: absolute;
+  top: 70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: grey;
+}
+
+.Short_container:hover .Short_overlay {
+  opacity: 0.8;
+     
+}
+
+.Short_text {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ul{
+    display: inline-block;
+}
