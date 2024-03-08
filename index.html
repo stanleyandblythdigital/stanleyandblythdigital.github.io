@@ -1,54 +1,204 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SB Digital</title>
-    <link rel="stylesheet" type="text/css" rel="stylesheet" href="StyleSheet.css">
-</head>
-<body>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <h1 class="logo">SB Digital</h1>
-            <nav class="navbar">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About Us</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-        </header>
+      <header class="header">
+        <h1 class="logo">SB Digital</h1>
+        <nav class="navbar">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <!-- <a href="#portfolio" class="nav-link">Portfolio</a> -->
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </header>
 
-        <main>
-            <section id="home" class="intro-section">
-                <h2>Welcome to SB Digital</h2>
-                <p>Your partner in digital innovation. We specialize in web development, digital marketing, and creating user-centric designs.</p>
-                <p>We offer a range of solutions, from desktop applications to full e-commerce websites including hosting, to general SEO / digital presence.</p>
-                <p>We would love to have a discussion to see how we can help you, today.</p>
-            </section>
+      <main>
+        <section id="home" class="section">
+          <h2>Welcome to SB Digital</h2>
+          <p>
+            Are you ready to transform your digital presence and outshine the
+            competition? At SB Digital, we specialize in elevating brands
+            through bespoke web development, digital marketing, and user-centric
+            design solutions. Let's embark on this journey together and unlock
+            your digital potential.
+          </p>
+        </section>
 
-            <section id="about" class="about-section">
-                <h2>About Us</h2>
-                <p>We are dedicated to helping our clients achieve their digital transformation goals. Our team is made up of experienced professionals passionate about technology and innovation.</p>
-                <p>Please don't hesitate to get in contact using the form below.</p>
-            </section>
+        <section id="services" class="section py-5">
+          <h2 class="text-center mb-4">Our Services</h2>
+          <p class="text-center mb-4">
+            We offer a comprehensive suite of services designed to meet every
+            aspect of your digital needs:
+          </p>
+          <div class="row">
+            <div class="col-md-4 text-center mb-4">
+              <i class="fas fa-code fa-3x" aria-hidden="true"></i>
+              <h3>Web Development</h3>
+              <p>
+                Custom websites and applications that perform seamlessly on all
+                devices.
+              </p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+              <i class="fas fa-bullhorn fa-3x" aria-hidden="true"></i>
+              <h3>Digital Marketing</h3>
+              <p>
+                Strategies that drive traffic, enhance engagement, and increase
+                conversions.
+              </p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+              <i class="fas fa-users fa-3x" aria-hidden="true"></i>
+              <h3>User-Centric Design</h3>
+              <p>
+                Intuitive and engaging designs focused on providing the best
+                user experience.
+              </p>
+            </div>
+          </div>
+          <p class="text-center">
+            Discover how our solutions can propel your business forward.
+            <a href="#contact">Get in touch</a> today.
+          </p>
+        </section>
 
-            <section id="contact" class="contact-section">
-                <h2>Contact Us</h2>
-                <form action="https://formspree.io/f/xleqlngw" method="POST" class="contact-form">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
-                    <!-- The following hidden input is used to specify the email subject -->
-                    <input type="hidden" name="_subject" value="New submission from SB Digital website!">
-                    <input type="hidden" name="_site" value="SB Digital Contact Form">
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </section>
-            
-        </main>
+        <!-- <section id="portfolio" class="section">
+          <h2>Our Work</h2>
+          <p>
+            Take a look at some of our recent projects that have helped clients
+            achieve remarkable success in the digital realm.
+          </p>
+          <div class="portfolio-items">
+            <div class="portfolio-item"><p>Project 1</p></div>
+            <div class="portfolio-item"><p>Project 2</p></div>
+            <div class="portfolio-item"><p>Project 3</p></div>
+          </div>
+        </section> -->
 
-        <footer class="footer">
-            <p>&copy; 2024 SB Digital. All rights reserved.</p>
-        </footer>
+        <section id="testimonials" class="section py-5">
+          <h2 class="text-center mb-4">What Our Clients Say</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4 text-center">
+              <div class="testimonial p-4">
+                <img
+                  src="person1.jpeg"
+                  alt="Client A"
+                  class="img-fluid rounded-circle mb-3"
+                  style="width: 120px; height: 120px; object-fit: cover"
+                />
+                <p>
+                  "SB Digital transformed our website, and we've seen a
+                  significant increase in traffic and sales as a result. Highly
+                  recommend their team for any digital needs." - Client A
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+              <div class="testimonial p-4">
+                <img
+                  src="person2.jpg"
+                  alt="Client B"
+                  class="img-fluid rounded-circle mb-3"
+                  style="width: 120px; height: 120px; object-fit: cover"
+                />
+                <p>
+                  "The level of detail and creativity SB Digital brings to the
+                  table is unmatched. They truly understand how to engage users
+                  and drive results." - Client B
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+              <div class="testimonial p-4">
+                <img
+                  src="person3.webp"
+                  alt="Client C"
+                  class="img-fluid rounded-circle mb-3"
+                  style="width: 120px; height: 120px; object-fit: cover"
+                />
+                <p>
+                  "Working with SB Digital was a game-changer for our online
+                  presence. Their personalized approach made all the
+                  difference." - Client C
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section">
+          <h2>About Us</h2>
+          <p>
+            At SB Digital, we're more than just a digital agency; we're your
+            partner in digital growth. Our team of passionate professionals is
+            dedicated to leveraging the latest technologies and trends to
+            deliver results that exceed your expectations. With over a decade of
+            experience, we've built a reputation for excellence in everything we
+            do.
+          </p>
+          <p>
+            Ready to take the next step? <a href="#contact">Contact us</a> and
+            let's discuss how we can help you achieve your digital aspirations.
+          </p>
+        </section>
+
+        <section id="contact" class="section">
+          <h2>Contact Us</h2>
+          <form
+            action="https://formspree.io/f/xleqlngw"
+            method="POST"
+            class="contact-form"
+          >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="_replyto"
+              placeholder="Your Email"
+              required
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New submission from SB Digital website!"
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>&copy; 2024 SB Digital. All rights reserved.</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
