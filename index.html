@@ -1,87 +1,54 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="Ben Stanley">
-        <link rel="icon" href="#">
-        <title>Ben Stanley · Portfolio</title>
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" rel="stylesheet" href="StyleSheet.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Digital</title>
+    <link rel="stylesheet" type="text/css" rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">SB Digital</h1>
+            <nav class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </header>
 
-    <body style="background-color: rgb(240,240,240)">
+        <main>
+            <section id="home" class="intro-section">
+                <h2>Welcome to SB Digital</h2>
+                <p>Your partner in digital innovation. We specialize in web development, digital marketing, and creating user-centric designs.</p>
+                <p>We offer a range of solutions, from desktop applications to full e-commerce websites including hosting, to general SEO / digital presence.</p>
+                <p>We would love to have a discussion to see how we can help you, today.</p>
+            </section>
 
-        <!--NAV BAR CONTENT SECTION-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Home<span class="sr-only">(current)</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Projects.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Resume.html">Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <section id="about" class="about-section">
+                <h2>About Us</h2>
+                <p>We are dedicated to helping our clients achieve their digital transformation goals. Our team is made up of experienced professionals passionate about technology and innovation.</p>
+                <p>Please don't hesitate to get in contact using the form below.</p>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <form action="https://formspree.io/f/xleqlngw" method="POST" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+                    <!-- The following hidden input is used to specify the email subject -->
+                    <input type="hidden" name="_subject" value="New submission from SB Digital website!">
+                    <input type="hidden" name="_site" value="SB Digital Contact Form">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
-            </div>
-        </nav>
-
-        <!--MAIN CONTENT SECTION-->
-        <main style="margin-top: 20px; margin-bottom: 10px;">
-            <div class="container-fluid">
-                <div class="row" style="margin-top:15px;">
-                    <div class="col">
-                        <div class="col" style="text-align:center;"><h2>STANLEY AND BLYTH DIGITAL</h2></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col">
-                        <div class="row">
-                            <img src="logo.png" >
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p style="color:red">Site currently being updated. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-            </div>
-            <br>
-            <br>
+            </section>
+            
         </main>
 
-        <!--FOOTER CONTENT SECTION-->
-        <div class="footer bg-dark">
-            <div class="row" style="margin-top:7px; margin-bottom:7px;">
-                <div class="col-md-6" style="text-align:center;">
-                    Ben Stanley &copy 2023
-                </div>
-                <div class="col-md-6" style="text-align: center;">
-                    Last updated 06/2023
-                </div>
-            </div>
-        </div>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+        <footer class="footer">
+            <p>&copy; 2024 SB Digital. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
 </html>
